@@ -1,6 +1,6 @@
 # Setup
 
-Before launch one of apps you have to instal dependencies with
+Before launch one of apps you have to install dependencies with
 
 `yarn install`
 
