@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
-  extends: '@react-native-community',
-  plugins: ['simple-import-sort'],
+  extends: '@react-native',
+  plugins: ['simple-import-sort', 'import'],
   rules: {
     'prefer-template': 'error',
     'no-useless-concat': 'error',
@@ -37,5 +37,10 @@ module.exports = {
       },
     ],
     'simple-import-sort/exports': 'error',
+    'react-native/no-unused-styles': 'error',
+    'max-len': ['warn', 120, { ignoreStrings: true }],
+    'import/newline-after-import': ['error', { count: 1 }],
+    'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
+    eqeqeq: ['error'],
   },
 };

@@ -1,11 +1,11 @@
-import {Dimensions, PixelRatio} from 'react-native';
+import { Dimensions, PixelRatio } from 'react-native';
 
 type DimensionsSchema = {
   width: number;
   height: number;
 };
 
-const {width, height}: DimensionsSchema = Dimensions.get('window');
+const { width, height }: DimensionsSchema = Dimensions.get('window');
 const ratio: number = PixelRatio.getFontScale();
 
 // edit values according to your layout template

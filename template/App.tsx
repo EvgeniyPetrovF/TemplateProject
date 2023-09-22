@@ -5,12 +5,12 @@
  * @format
  */
 
-import React, {FC, useEffect} from 'react';
+import React, { FC, useEffect } from 'react';
 import RNBootSplash from 'react-native-bootsplash';
-import {Provider} from 'react-redux';
-import {NavigationContainer} from '@react-navigation/native';
-import AppStack from './src/navigators/AppStack';
-import store from './src/redux/store';
+import { Provider } from 'react-redux';
+import { NavigationContainer } from '@react-navigation/native';
+import AppStack from 'navigation/AppStack';
+import store from 'store';
 
 const App: FC = () => {
   useEffect(() => {

@@ -1,3 +1,23 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "target": "esnext",
+    "lib": ["es2017", "dom"],
+    "jsx": "react-native",
+    "skipLibCheck": true,
+    "paths": {
+      "assets/*": ["assets/*"],
+      "components": ["components"],
+      "consts": ["consts"],
+      "contexts/*": ["contexts/*"],
+      "features/*": ["features/*"],
+      "hooks": ["hooks"],
+      "navigation/*": ["navigation/*"],
+      "store/*": ["store/*"],
+      "services/*": ["services/*"],
+      "types/*": ["types/*"],
+      "utils/*": ["utils/*"]
+    }
+  }
 }
